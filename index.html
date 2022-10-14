@@ -30,14 +30,15 @@ Every CSS selector has its place in the specificity hierarchy.
 <ins>There are four categories which define the specificity level of a selector:</ins>
 <p>
 <ol>
-<li>Inline styles</li>
-<li>IDs</li>
-<li>Classes, pseudo-classes, attribute selectors</li>
-<li>Elements and pseudo-elements</li>
+<li>Inline styles <mark>(h1 style"color;pink;")</mark></li>
+<li>IDs <mark>#( )</mark></li>
+<li>Classes, pseudo-classes, attribute selectors <mark>.( )</mark></li>
+<li>Elements and pseudo-elements <mark>(h1,:Before)</mark></li>
 </ol>
 </p>
 <p>
-<ins>Inline style</ins> gets a specificity value of 1000, and is always given the highest priority!
+<ins>Inline style</ins> gets a specificity value of 1000, and is always given the highest priority.
+Internal styles are defined within the (style) element, inside the (head) section of an HTML page.
 </p>
 <ins>Equal specificity:</ins> the latest rule wins - If the same rule is written twice into the external style sheet, then the latest rule wins:
 <p>
